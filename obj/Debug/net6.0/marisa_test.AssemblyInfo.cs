@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("marisa_test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba505777ca5f12f97bf8183b53a48aa64d8b3783")]
 [assembly: System.Reflection.AssemblyProductAttribute("marisa_test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("marisa_test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

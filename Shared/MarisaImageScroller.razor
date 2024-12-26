@@ -1,0 +1,32 @@
+﻿@inject HttpClient Http
+
+<div class="image-carousel">
+    <div class="image-wrapper">
+        @foreach (var image in imageUrls)
+        {
+            <div class="carousel-item">
+                <img src="@image.Url" class="carousel-image" alt="Image" />
+                <p class="author-name">@image.Author</p>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<ImageData> imageUrls = new List<ImageData>
+    {
+        new ImageData { Url = "https://safebooru.org//samples/3588/sample_5d7ebbebf65e4f885778c84382d2424c3661a1e1.jpg?5427581", Author = "niru (ka k 0517)" },
+        new ImageData { Url = "https://safebooru.org//samples/3076/sample_647b9ca183ed473c738fdd7f14da8e31ad321d33.jpg?5418869", Author = " kame (kamepan44231) " },
+        new ImageData { Url = "https://safebooru.org//samples/4356/sample_978472b72a824cecc1f2d2650475733b2460f4e4.jpg?5434457", Author = " kura (xxcracy)" },
+        new ImageData { Url = "https://safebooru.org//samples/4100/sample_49cdcd5c09ec7abaf1c4fbb82d5796b858370cc3.jpg?5433068", Author = " nekolina" },
+        new ImageData { Url = "https://safebooru.org//images/3076/d03526a23b94b0227434f5426b8562b8dd4dd5e2.jpg?5420669", Author = " asakura maru" },
+        new ImageData { Url = "https://safebooru.org//samples/29/sample_2d3c79aaef243121c2c9560541b0b1e7f81fa0c8.jpg?28518", Author = "" },
+        new ImageData { Url = "https://safebooru.org//samples/27/sample_b8914f90656fec1434d78a310eda4f9050963177.jpg?26996", Author = "" },
+    };
+
+    public class ImageData
+    {
+        public string Url { get; set; }
+        public string Author { get; set; }
+    }
+}
